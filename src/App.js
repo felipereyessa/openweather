@@ -1,23 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
-
+//==========Archivos exportados(Dependencias y demas)==========//
+import './assets/css/App.css'; // Estilos
+import Navbar from './components/Navbar';
+import WeatherPanel from './components/WheatherPanel';
+//==========Exportacion al a=index.html==========//
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <WeatherPanel />
     </div>
   );
 }
